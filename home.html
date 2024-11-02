@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Personal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f8fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #5d96df; 
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            margin: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ff7ea8; /* Soft pink */
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #ff7ea8; /* Soft pink */
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff7ea8; /* Soft pink */
+            color: #fff;
+        }
+
+        .project-section {
+            margin-top: 40px;
+        }
+        .project-title {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .project-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .project-buttons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #ff7ea8; /* Soft pink */
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-buttons a:hover {
+            background-color: #e06b91;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 15px;
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Blog</h1>
+</header>
+
+<div class="content">
+    <p>This is the homepage of my personal blog. Explore my CV, travel journal, biodata, pet section, and book recommendations to learn more about me and my journey.</p>
+    
+    <!-- Tombol Blog Pribadi -->
+    <nav>
+        <a href="/cv">CV</a>
+        <a href="/portofolio">Travel Journal</a>
+        <a href="/biodataabel">Biodata</a>
+        <a href="/cat">My Pet</a>
+        <a href="/book">Book & Movie Recommendations</a>
+    </nav>
+
+    <!-- Section Project -->
+    <div class="project-section">
+        <p class="project-title">Projects</p>
+        <div class="project-buttons">
+            <a href="/fibonaci">Fibonacci Calculator</a>
+            <a href="/csv">Convert CSV to JSON</a>
+            <a href="/form">Submit Form</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Personal Blog | Made with passion by Abel</p>
+</footer>
+
+</body>
+</html>

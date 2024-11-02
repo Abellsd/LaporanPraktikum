@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0ff; /* Light blue background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #1a73e8; /* Dark blue color */
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1a73e8; /* Blue color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #155bb5; /* Darker blue on hover */
+        }
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .back-button:hover {
+            color: #155bb5;
+        }
+        .result {
+            margin-top: 20px;
+            color: #333;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Submit Your Information</h1>
+        <form action="/form" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="prodi">Prodi:</label>
+            <input type="text" id="prodi" name="prodi" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Link untuk kembali ke halaman utama -->
+        <a href="/" class="back-button">Kembali ke Halaman Utama</a>
+
+        <!-- Menampilkan hasil setelah form disubmit -->
+        {% if name and nim and email and prodi %}
+            <div class="result">
+                <h2>Data yang Dikirim:</h2>
+                <p><strong>Nama:</strong> {{ name }}</p>
+                <p><strong>NIM:</strong> {{ nim }}</p>
+                <p><strong>Email:</strong> {{ email }}</p>
+                <p><strong>Prodi:</strong> {{ prodi }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>

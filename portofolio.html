@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Perjalanan - Blog Pribadi Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f8fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #ff7ea8; /* Soft pink */
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .travel-content {
+            max-width: 900px;
+            padding: 20px;
+            margin: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .trip-highlight {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .trip-highlight h2 {
+            color: #4b88a2;
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .trip-highlight p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ff7ea8; /* Soft pink */
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #ff7ea8; /* Soft pink */
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff7ea8; /* Soft pink */
+            color: #fff;
+        }
+
+        footer {
+            width: 100%;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catatan Perjalanan</h1>
+</header>
+
+<div class="travel-content">
+    <div class="trip-highlight">
+        <h2>Menjelajahi Bali</h2>
+        <p>Bali adalah pulau yang terkenal dengan keindahan alam dan budayanya. Berikut adalah beberapa sorotan dan tips saat mengunjungi Bali:</p>
+        <ul>
+            <li>Kunjungi Pura Uluwatu untuk menikmati pemandangan matahari terbenam yang menakjubkan.</li>
+            <li>Jangan lewatkan sawah terasering di Tegallalang untuk tempat foto yang sempurna.</li>
+            <li>Cobalah makanan lokal seperti Nasi Goreng dan Sate untuk pengalaman kuliner Bali yang sesungguhnya.</li>
+        </ul>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/564x/63/f5/37/63f5375c5301f8e27607dfe67d0f113e.jpg" alt="Pantai Bali">
+            <img src="https://i.pinimg.com/564x/98/b4/24/98b4244a69e8afcd65b4a289f7c9cb87.jpg" alt="Pura Uluwatu">
+            <img src="https://i.pinimg.com/564x/b7/0e/9c/b70e9ceec6d8e985c260d14450a39a8a.jpg" alt="Sawah Terasering">
+            <img src="https://i.pinimg.com/564x/8f/f1/b3/8ff1b334de0e053f585245283eb4ec74.jpg" alt="Budaya Bali">
+        </div>
+    </div>
+
+    <div class="trip-highlight">
+        <h2>Menemukan Yogyakarta</h2>
+        <p>Yogyakarta dikenal sebagai pusat kebudayaan Jawa. Berikut adalah beberapa tempat yang harus dikunjungi:</p>
+        <ul>
+            <li>Kunjungi Candi Borobudur, candi Buddha terbesar di dunia.</li>
+            <li>Jelajahi Keraton Yogyakarta untuk merasakan sejarah dan budaya Jawa.</li>
+            <li>Jangan lewatkan Malioboro untuk berbelanja dan mencicipi kuliner lokal.</li>
+        </ul>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/564x/27/f3/1d/27f31d9c494cf589a92948ae2211a80a.jpg" alt="Candi Borobudur">
+            <img src="https://i.pinimg.com/564x/65/08/d5/6508d57b7ea63af0674148e4274f4bbd.jpg" alt="Keraton Yogyakarta">
+            <img src="https://i.pinimg.com/564x/bc/c3/52/bcc352ab1675f8df16f9c441e32fbfd4.jpg" alt="Malioboro">
+            <img src="https://i.pinimg.com/564x/19/fe/cb/19fecbe77f0d580864dfdad310eb67a2.jpg" alt="Kuliner Yogyakarta">
+        </div>
+    </div>
+
+    <div class="trip-highlight">
+        <h2>Keindahan Danau Toba</h2>
+        <p>Danau Toba adalah danau vulkanik terbesar di dunia dan tempat yang sempurna untuk bersantai:</p>
+        <ul>
+            <li>Jelajahi Pulau Samosir yang indah di tengah Danau Toba.</li>
+            <li>Cobalah makanan khas Batak, seperti Saksang dan Nasi Goreng Samosir.</li>
+            <li>Nikmati pemandangan alam yang menakjubkan dari berbagai sudut di sekitar danau.</li>
+        </ul>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/564x/30/95/a9/3095a9bc3380b69f142e144f53a984d2.jpg" alt="Danau Toba">
+            <img src="https://i.pinimg.com/564x/c7/00/60/c70060aad64460dcf9d1b9acd1234e0c.jpg" alt="Pulau Samosir">
+            <img src="https://i.pinimg.com/564x/a8/20/2a/a8202a949dcc64347f629a1eac16bf3c.jpg" alt="Pemandangan Danau Toba">
+            <img src="https://mediapijar.com/wp-content/uploads/2021/05/IMG_9756.jpg" alt="Kuliner Batak">
+        </div>
+    </div>
+    
+    <nav>
+        <a href="/">Kembali ke Halaman Utama</a>
+    </nav>
+</div>
+
+<footer>
+    <p>&copy; 2024 Blog Pribadi Saya | Catatan Perjalanan oleh Abell</p>
+</footer>
+
+</body>
+</html>
